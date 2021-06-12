@@ -105,7 +105,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="routes/virtual.html" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
                 </p>
-                <a href="#" class="btn btn-dark">Read More</a>
+                <a href="routes/hybrid.html" class="btn btn-dark">Read More</a>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="routes/in_person.html" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#" class="btn btn-light mt-3">
+            <a href="routes/fundamentals.html" class="btn btn-light mt-3">
               <i class="bi bi-chevron-right"></i> Read More
             </a>
           </div>
@@ -185,7 +185,7 @@
               quae similique laboriosam iste minus placeat odit velit quos,
               nulla architecto amet voluptates?
             </p>
-            <a href="#" class="btn btn-light mt-3">
+            <a href="routes/fundamentals.html" class="btn btn-light mt-3">
               <i class="bi bi-chevron-right"></i> Read More
             </a>
           </div>
@@ -203,16 +203,16 @@
         <div class="accordion accordion-flush" id="questions">
           <!-- Item 1 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#question-one"
               >
-                Where exactly are you located?
+                Where is your institution located?
               </button>
-            </h2>
+            </h3>
             <div
               id="question-one"
               class="accordion-collapse collapse"
@@ -231,7 +231,7 @@
           </div>
           <!-- Item 2 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -240,7 +240,7 @@
               >
                 How much does it cost to attend?
               </button>
-            </h2>
+            </h3>
             <div
               id="question-two"
               class="accordion-collapse collapse"
@@ -259,7 +259,7 @@
           </div>
           <!-- Item 3 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -268,7 +268,7 @@
               >
                 What do I need to know before hand?
               </button>
-            </h2>
+            </h3>
             <div
               id="question-three"
               class="accordion-collapse collapse"
@@ -287,7 +287,7 @@
           </div>
           <!-- Item 4 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -296,7 +296,7 @@
               >
                 How do I sign up?
               </button>
-            </h2>
+            </h3>
             <div
               id="question-four"
               class="accordion-collapse collapse"
@@ -315,7 +315,7 @@
           </div>
           <!-- Item 5 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
@@ -324,7 +324,7 @@
               >
                 Will your organization help me find a job?
               </button>
-            </h2>
+            </h3>
             <div
               id="question-five"
               class="accordion-collapse collapse"
@@ -449,7 +449,7 @@
             <h2 class="text-center mb-4">Contact Info</h2>
             <ul class="list-group list-group-flush lead">
               <li class="list-group-item">
-                <span class="fw-bold">Main Location:</span> RO, Bucharest, Random Street, 135
+                <span class="fw-bold">Main Location:</span> RO, Bucharest, 5, Strada Nicolae Iorga Street, 010431
               </li>
               <li class="list-group-item">
                 <span class="fw-bold">Enrollment Phone:</span> (+40) 765-321-546
@@ -490,6 +490,23 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoib3NoaWlubyIsImEiOiJja3B0YnhwZm8wcXVtMm9tbnE2eGV2MnA1In0.zqLc9Y2j_12jdVA_2TKzRw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [44.44765075368383, 26.090833683523446],
+      zoom: 15,
+    })
+  </script>
   </body>
 </html>
 

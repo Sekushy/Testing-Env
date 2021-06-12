@@ -16,3 +16,6 @@ body::before {
   }
 }
 
+#learn h2, #questions h2, #instructors h2{
+  margin-top: 1.5em;
+}
