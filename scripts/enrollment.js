@@ -3,8 +3,6 @@ $(document).ready(function(){
     $("#step3").hide();
     $("#step4").hide();
     $("#step5").hide();
-    var current_step, previous_step, next_step
-    var opacity
 
     // STEP 1 EVENT HANDLING
     $(".next-step2").click(function(event){
