@@ -1,53 +1,31 @@
-$(document).ready(function(){
-    $("#step2").hide();
-    $("#step3").hide();
-    $("#step4").hide();
-    $("#step5").hide();
+const steps = Array.from(document.querySelectorAll("form .step"));
+const nextBtn = document.querySelectorAll("form .next-btn");
+const prevBtn = document.querySelectorAll("form .previous-btn");
+const form = document.querySelector("form");
 
-    // STEP 1 EVENT HANDLING
-    $(".next-step2").click(function(event){
-        $("#step1").hide();
-        $("#step2").show();
-        event.preventDefault();  
+nextBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+        changeStep("next");
     });
-
-    // STEP 2 EVEN HANDLING
-    $(".previous-step1").click(function(event){
-        $("#step2").hide();
-        $("#step1").show();
-        event.preventDefault();
-    });
-
-    $(".next-step3").click(function(event){
-        $("#step2").hide();
-        $("#step3").show();
-        event.preventDefault();
-    });
-
-    // STEP 3 EVENT HANDLING
-    $(".previous-step2").click(function(event){
-        $("#step3").hide();
-        $("#step2").show();
-        event.preventDefault();
-    });
-
-    $(".next-step4").click(function(event){
-        $("#step3").hide();
-        $("#step4").show();
-        event.preventDefault();
-    });
-
-    // STEP 4 EVENT HANDLING
-    $(".previous-step3").click(function(event){
-        $("#step4").hide();
-        $("#step3").show();
-        event.preventDefault();
-    });
-
-    $(".next-step5").click(function(event){
-        $("#step4").hide();
-        $("#step5").show();
-        event.preventDefault();
-    });
-
 });
+
+prevBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+        changeStep("prev");
+    });
+});
+
+function changeStep(btn) {
+    let index = 0;
+    const active = document.querySelector(".active");
+    index = steps.indexOf(active)
+    steps[index].classList.remove("active");
+    if (btn == "next") {
+        index++;
+    } else if (btn == "prev") {
+        index--;
+    }
+
+    steps[index].classList.add("active");
+}
+

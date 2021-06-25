@@ -1,108 +1,52 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html {
-  height: 100%;
+section {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 80%;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000020;
+  border-radius: 8px;
+  background-color: white;
 }
 
-#msform {
-  text-align: center;
-  position: relative;
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.form-group {
+  width: 100%;
   margin-top: 20px;
 }
-
-.warning-msg {
-  color: red;
-  font-size: 10px;
-}
-
-#multi-step-form fieldset .form-card {
-  background: wheat;
-  border: 0 none;
-  border-radius:  0px;
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 20px 40px 30px 40px;
-  box-sizing: border-box;
-  width: 94%;
-  margin: 0 3% 20px 3%;
-  position: relative;
-}
-
-#multi-step-form fieldset {
-  background: whitesmoke;
-  border: 0 none;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
+.form-group input {
   width: 100%;
-  margin: 0;
-  padding-bottom: 20px;
-  position: relative;
+  border: 1.5px solid rgba(128, 128, 128, 0.418);
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+  border-radius: 4px;
 }
 
-#multi-step-form fieldset .form-card {
-  text-align: left;
+button.next-btn,
+button.previous-btn,
+button.submit-btn {
+  float: right;
+  margin-top: 20px;
+  padding: 10px 30px;
+  /* text-align: right; */
 }
-
-#multi-step-form input, #multi-step-form textarea {
-  padding: 0px 8px 4px 8px;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0px;
-  margin-bottom: 25px;
-  margin-top: 2px;
-  width: 75%;
-  box-sizing: border-box;
-}
-
-.fs-title {
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-#progressbar .active { 
-  color: #000;
-}
-
-#progressbar li { 
-  list-style-type: none;
-  font-size: 12px;
-  width: 20%;
+button.previous-btn {
   float: left;
-  position: relative;
 }
-
-/*
-TODO: Add font awesome icons in order to fix the visibility issue 
-
-#progressbar #account::before {
-  font-family: FontAwesome;
-  content: "\f023";
-}
-
-#progressbar #personal::before {
-  font-family: FontAwesome;
-  content: "\f2bb"
-}
-*/
-
-
-
-
-/*
-#progressbar li::after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: lightgray;
-  position: absolute;
-  left: 0;
-  top: 25px;
-  z-index: -1
-}
-
-#progressbar li.active:before, #porgressbar li.active:after {
-  background: skyblue
-}
-*/
