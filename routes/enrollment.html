@@ -33,15 +33,29 @@
                 <div class="form-group">
                   <label for="firstName">First Name</label>
                   <input type="text" id="firstName" name="first-name">
+                  <div class="error-message hidden">Your first name is required</div>
                 </div>
                 <div class="form-group">
                   <label for="lastName">Last Name</label>
                   <input type="text" id="lastName" name="last-name">
+                  <div class="error-message hidden">Your last name is required</div>
                 </div>
                 <div class="form-group">
-                  <label for="nickName">Nick Name</label>
-                  <input type="text" id="nickName" name="nick-name">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="user-name">
+                  <div class="error-message hidden">Your username is required</div>
                 </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password">
+                  <div class="error-message hidden">Your password is required</div>
+                </div>
+                <div class="form-group">
+                  <label for="cpassword">Confirm password</label>
+                  <input type="password" id="cpassword" name="cpassword">
+                  <div class="error-message hidden">Your password is required</div>
+                </div>
+
                 <button type="button" class="next-btn btn-primary">Next</button>
               </div>
         
@@ -50,22 +64,27 @@
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input type="text" id="email" name="email">
+                  <div class="error-message hidden">Email required</div>
                 </div>
                 <div class="form-group">
                   <label for="phone">Phone</label>
                   <input type="text" id="phone" name="phone-number">
+                  <div class="error-message hidden">Phone number required</div>
                 </div>
                 <div class="form-group">
                   <label for="country">Country</label>
                   <input type="text" id="country" name="country">
+                  <div class="error-message hidden">Country required</div>
                 </div>
                 <div class="form-group">
                   <label for="city">City</label>
                   <input type="text" id="city" name="city">
+                  <div class="error-message hidden">City required</div>
                 </div>
                 <div class="form-group">
                   <label for="postCode">Post Code</label>
                   <input type="text" id="postCode" name="post-code">
+                  <div class="error-message hidden">Postcode required</div>
                 </div>
                 <button type="button" class="previous-btn btn btn-dark">Prev</button>
                 <button type="button" class="next-btn btn btn-primary">Next</button>
@@ -109,12 +128,22 @@
                 <div class="form-group">
                   <label class="pay">Card holder name: </label> 
                   <input type="text" name="card-name" placeholder="i.e John Doe">
+                  <div class="error-message hidden">Card holder name required</div>
                 </div>
                 <!--Card Number & CVC-->
                 <div class="form-group">
                   <div class="row">
-                    <div class="col-6"><label class="pay">Card number:</label> <input type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"></div>
-                    <div class="col-3"><label class="pay">CVC:</label> <input type="password" name="card-cvc" placeholder="XXX"></div>
+                    <div class="col-6">
+                      <label class="pay">Card number:</label> 
+                      <input type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"> 
+                      <div class="error-message hidden">Card number required</div>
+                    </div>
+                    
+                    <div class="col-3">
+                      <label class="pay">CVC:</label> 
+                      <input type="password" name="card-cvc" placeholder="XXX">
+                      <div class="error-message hidden">CVC required</div>
+                    </div>
                   </div>
                 </div>
                 <!--Expiry Date-->

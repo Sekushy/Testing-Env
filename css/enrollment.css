@@ -50,3 +50,11 @@ button.submit-btn {
 button.previous-btn {
   float: left;
 }
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: red;
+}
